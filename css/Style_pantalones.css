@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(245, 245, 245); 
+}
+
+header .contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+header .contenedor .logo{
+    background-image: url("./zapatos/tienda.png");
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    padding: 18px;
+    font-weight: bold;
+    margin-left: 0px; 
+}
+
+header nav {
+
+    padding-right: 12%;
+    display: flex;
+
+}
+header a {
+    padding: 0px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 0.8em;
+}
+
+header a:hover {
+    color:rgb(210, 26, 32);
+}
+
+body{
+    margin: 0%;
+}
+
+@media (min-width: 700px){
+    header a {
+        font-size: 1.1em;
+    }
+
+    header .contenedor .logo{
+        margin-left: 20px;
+    }
+}
+
+@keyframes slide {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    }
+}
+
+
+/**
+.contenedor1{
+    border: 1px solid black;
+    width: 40%;
+    height: 95%;
+    display: grid;
+    grid-template-rows: 5% 35% 5% 35% 17% 3%
+}
+.texto1{
+    margin: 5%;
+}
+.texto2{
+    margin: 5%;
+}
+.texto3{
+    margin: 5%;
+}
+
+.texto4{
+    margin: 5%;
+}
+.intro{
+    display: grid;
+    background-color: black;
+    align-items: center;
+    grid-template-columns: 15% 70% 15%;
+    color: white;
+}
+.spam{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    background-color: gray;
+}
+.imagen1{
+    background-color: black;
+    display: grid;
+    align-items: center;
+    display: grid;
+    grid-template-columns:  23% 2% 23% 2% 23% 2% 23% 2%;
+    grid-template-rows: 50% 50%;
+    color: white;
+}
+.subfinal{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 7% 25% 6% 25% 6% 25% 6% ;
+    grid-template-rows: 50% 50%;
+    color: white;
+    align-items: center;
+}
+.final{
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+}
+
+
