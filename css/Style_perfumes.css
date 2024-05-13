@@ -20,7 +20,7 @@ header .contenedor{
 }
 
 header .contenedor .logo{
-    background-image: url("./zapatos/tienda.png");
+    background-image: url("../img/tienda.png");
     background-size: cover;
     background-position: center center;
     margin: 0;
@@ -51,6 +51,47 @@ body{
     margin: 0%;
 }
 
+.conte_catalogo{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px; 
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px 20px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0px 00px;
+}
+
+.informacion {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 3px;
+}
+
+.decoracion_precio{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.informacion h2 {
+    font-size:2vh;
+}
+
+.informacion p {
+    font-size: 2vh;
+    margin-bottom: 20px;
+}
+
 @media (min-width: 700px){
     header a {
         font-size: 1.1em;
@@ -58,6 +99,10 @@ body{
 
     header .contenedor .logo{
         margin-left: 20px;
+    }
+
+    .informacion h2 {
+        font-size: 3vh;
     }
 }
 
